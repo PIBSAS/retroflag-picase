@@ -9,7 +9,7 @@ mount -o remount, rw /boot
 mount -o remount, rw /
 
 #RetroFlag pw io ;2:in ;3:in ;4:in ;14:out 1----------------------------------------
-File=/boot/config.txt
+File=/boot/recalbox-user-config.txt
 wget -O  "/boot/overlays/RetroFlag_pw_io.dtbo" "$SourcePath/RetroFlag_pw_io.dtbo"
 if grep -q "RetroFlag_pw_io" "$File";
 	then
@@ -47,6 +47,7 @@ sleep 2s
 
 script=/opt/RetroFlag/SafeShutdown.py
 wget --no-check-certificate -O  $script "$SourcePath/recalbox_SafeShutdown.py"
+sed -i 's/\r//g' ${script}
 #-----------------------------------------------------------
 
 sleep 2s
