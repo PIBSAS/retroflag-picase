@@ -20,11 +20,11 @@ def set_gpio(pin, mode, level=None, pull=None):
 def get_level(pin):
 	result = subprocess.run(["raspi-gpio", "get", str(pin)], capture_output=True, text=True)
 	line = result.stdout.strip()
-
-for part in line.split():
-	if part.startswith("level="):
-		return int(part.split("=")[1])
-return None
+	
+	for part in line.split():
+		if part.startswith("level="):
+			return int(part.split("=")[1])
+	return None
 
 #initialize GPIO settings
 def init():
