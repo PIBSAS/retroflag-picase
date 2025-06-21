@@ -40,7 +40,7 @@ def poweroff():
 		if level == 0:
 			os.system("killall emulationstation")
 			time.sleep(5)
-			os.system("shutdown -r now")
+			os.system("shutdown -h now")
 			break
 		time.sleep(0.1)
 
