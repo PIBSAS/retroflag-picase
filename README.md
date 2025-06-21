@@ -40,6 +40,7 @@ wget -O - "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/i
 4. User: root Password: recalboxroot
 5. In the terminal, type the one-line command below(Case sensitive):
 
+
 ````
 wget -O - "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/recalbox_install_gpi.sh" | bash
 ````
@@ -71,6 +72,10 @@ wget -O - "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/i
 3. Press F4 first. And then press ALT-F2 enter terminal.
 4. User: root Password: recalboxroot
 5. In the terminal, type the one-line command below(Case sensitive):
+
+````
+wget -O - "https://raw.githubusercontent.com/PIBSAS/retroflag-picase/master/recalbox_install.sh" | bash
+````
 
 ````
 wget -O - "https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master/recalbox_install.sh" | bash
