@@ -39,10 +39,10 @@ def poweroff():
 		level = get_level(powerPin)
 		if level == 0:
 			os.system("killall emulationstation")
-			time.sleed(5)
+			time.sleep(5)
 			os.system("shutdown -r now")
 			break
-		time.sleep(0.1
+		time.sleep(0.1)
 
 #blinks the LED to signal button being pushed
 def ledBlink():
@@ -50,7 +50,7 @@ def ledBlink():
 		level = get_level(powerPin)
 		if level == 0:
 			while get_level(powerPin) == 0:
-				subprocess.run(["raspi-gpio", "set", str(ledPin), "ld"])
+				subprocess.run(["raspi-gpio", "set", str(ledPin), "dl"])
 				time.sleep(0.2)
 				subprocess.run(["raspi-gpio", "set", str(ledPin), "dh"])
 				time.sleep(0.2)
