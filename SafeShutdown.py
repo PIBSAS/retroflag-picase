@@ -31,7 +31,7 @@ def init():
 	set_gpio(powerPin, "ip", pull="pu")
 	set_gpio(resetPin, "ip", pull="pu")
 	set_gpio(ledPin, "op", level="dh")
-	set_gpio(powerPin, "op", level="dh")
+	set_gpio(powerenPin, "op", level="dh")
 
 #waits for user to hold button up to 1 second before issuing poweroff command
 def poweroff():
